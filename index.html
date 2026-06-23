@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STT Watugunung - Banjar Umagunung</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,700;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Ambient Dynamic Background -->
+    <div class="ambient-bg">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+    <!-- Modern Floating Navbar -->
+    <header class="navbar">
+        <div class="nav-container">
+            <div class="brand">
+                <img src="assets/images/logo.jpg"
+                    alt="Logo STT Watugunung" class="brand-icon">
+                <div class="brand-text">
+                    <h2>STT Watugunung</h2>
+                    <p>Banjar Umagunung</p>
+                </div>
+            </div>
+
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#beranda" class="active" data-target="beranda">Beranda</a></li>
+                    <li><a href="#manajemen" data-target="manajemen">Manajemen</a></li>
+                    <li><a href="#kebudayaan" data-target="kebudayaan">Kebudayaan</a></li>
+                    <li><a href="#media-sosial" data-target="media-sosial">Media Sosial</a></li>
+                </ul>
+            </nav>
+
+            <!-- Hamburger Button (Mobile Only) -->
+            <button class="hamburger" id="hamburger-btn" aria-label="Toggle Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Nav Drawer Overlay -->
+    <div class="mobile-nav-overlay" id="mobile-nav-overlay"></div>
+    <div class="mobile-nav-drawer" id="mobile-nav-drawer">
+        <div class="mobile-brand">
+            <img src="assets/images/logo.jpg" alt="Logo STT Watugunung" class="brand-icon">
+            <div class="brand-text">
+                <h2>STT Watugunung</h2>
+                <p>Banjar Umagunung</p>
+            </div>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#beranda" data-target="beranda"><i class="fa-solid fa-house"></i> Beranda</a></li>
+            <li><a href="#manajemen" data-target="manajemen"><i class="fa-solid fa-users"></i> Manajemen</a></li>
+            <li><a href="#kebudayaan" data-target="kebudayaan"><i class="fa-solid fa-mask"></i> Kebudayaan</a></li>
+            <li><a href="#media-sosial" data-target="media-sosial"><i class="fa-solid fa-hashtag"></i> Media Sosial</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content Area -->
+    <main class="content-area">
+
+        <!-- SECTION: BERANDA -->
+        <section id="beranda" class="page-section active">
+            <div class="hero">
+                <!-- Using a striking balinese temple placeholder -->
+                <img src="https://images.unsplash.com/photo-1537996194471-e657df975ab4?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80"
+                    alt="Bali Temple" class="hero-bg">
+                <div class="hero-overlay"></div>
+                <div class="hero-content">
+                    <span class="badge"><i class="fa-solid fa-sparkles"></i> Sagilik Saguluk Salunglung
+                        Sabayantaka</span>
+                    <h1 class="title">Yowana Jayanti Budaya<br> <span class="gradient-text">Pemuda Mandiri, Penjaga
+                            Tradisi.</span></h1>
+                    <p class="subtitle">Om Swastyastu, Selamat Datang di Portal Resmi STT Watugunung! Wadah kreativitas,
+                        pengabdian, dan pelestarian budaya bagi Yowana Banjar Umagunung.</p>
+
+                    <div class="hero-actions">
+                        <button class="btn-primary glow-effect"
+                            onclick="document.getElementById('profil').scrollIntoView({behavior: 'smooth', block: 'start'})">Kenali
+                            Kami Lebih Dekat <i class="fa-solid fa-arrow-down"></i></button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- PROFIL MERGED INTO BERANDA -->
+            <div id="profil" style="padding-top: 120px;">
+                <div class="container">
+                    <div class="section-header center">
+                        <span class="sub-heading">Merawat Akar, Menumbuhkan Harapan</span>
+                        <h2><i class="fa-solid fa-landmark text-gold"></i> Profil Organisasi</h2>
+                    </div>
+                    <div class="grid-container">
+                        <div class="glass-card history-card">
+                            <div class="card-icon"><i class="fa-solid fa-clock-rotate-left"></i></div>
+                            <h3>Sejarah STT Watugunung</h3>
+                            <p>Sekaa Teruna Teruni (STT) Watugunung lahir dari kesadaran penuh para pemuda-pemudi Banjar
+                                Umagunung akan pentingnya melanjutkan tongkat estafet tanggung jawab adat, tradisi, dan
+                                keagamaan. Berdiri di wilayah strategis Kelurahan Sempidi.</p>
+                            <p>Dengan semangat <strong>sagilik saguluk, salunglung sabayantaka</strong>, organisasi ini
+                                menjadi pilar pergerakan sosial untuk memajukan banjar.</p>
+                        </div>
+                        <div class="glass-card vision-card">
+                            <div class="card-icon"><i class="fa-solid fa-eye"></i></div>
+                            <h3>Visi & Misi Tri Hita Karana</h3>
+                            <div class="vision">
+                                <p>"Mewujudkan organisasi STT Watugunung yang unggul, berkarakter, inovatif, dan
+                                    berbudaya, berlandaskan ajaran seimbang Tri Hita Karana."</p>
+                            </div>
+                            <ul class="modern-list">
+                                <li>
+                                    <div class="list-icon"><i class="fa-solid fa-om"></i></div>
+                                    <div><strong>Parahyangan:</strong> Memantapkan sradha bhakti melalui ngayah secara
+                                        tulus ikhlas.</div>
+                                </li>
+                                <li>
+                                    <div class="list-icon"><i class="fa-solid fa-hands-holding-circle"></i></div>
+                                    <div><strong>Pawongan:</strong> Membangun solidaritas, menjaga ruang asah, asih,
+                                        asuh antar sesama.</div>
+                                </li>
+                                <li>
+                                    <div class="list-icon"><i class="fa-solid fa-leaf"></i></div>
+                                    <div><strong>Palemahan:</strong> Menjaga kelestarian alam banjar maupun desa (ibu
+                                        pertiwi).</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <!-- SECTION: MANAJEMEN -->
+        <section id="manajemen" class="page-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-heading">Tulang Punggung Organisasi STT</span>
+                    <h2><i class="fa-solid fa-users text-gold"></i>Kepengurusan Stt Watugunung</h2>
+                </div>
+
+                <p class="intro-text center-text">Keberhasilan STT Watugunung tidak terlepas dari dedikasi luar biasa
+                    para pengurus serta ikatan <em>paiketan</em> yang solid untuk menggerakkan roda organisasi.</p>
+
+                <div class="modern-org-structure">
+                    <div class="org-node head-node">
+                        <div class="node-avatar"><i class="fa-solid fa-user-tie"></i></div>
+                        <h4>Ketua STT</h4>
+                        <p>I Nyoman Khrisna Cahya Wiguna</p>
+                    </div>
+                    <div class="org-connector"></div>
+                    <div class="org-node core-node" style="margin-bottom: 30px;">
+                        <h4>Wakil Ketua</h4>
+                        <p>I Putu Krisna Dipayana Putra</p>
+                    </div>
+                    <div class="org-connector"></div>
+                    <div class="org-row">
+                        <div class="org-node core-node">
+                            <h4>Sekretaris</h4>
+                            <p>1. Ni Putu Harista Diandari<br>2. I Nyoman Rian Dananjaya P.</p>
+                        </div>
+                        <div class="org-node core-node">
+                            <h4>Bendahara</h4>
+                            <p>1. Ni Putu Ananda Puspita Sari<br>2. I Putu Adi Pratama Putra</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="members-section" style="margin-top: 80px;">
+                    <h3 class="center-text" style="font-size: 32px; margin-bottom: 5px;">Daftar Anggota Stt Watugunung
+                    </h3>
+                    <p class="center-text" style="color: var(--text-secondary); margin-bottom: 30px;">STT Watugunung
+                        terletak pada kebersamaan 77 anggotanya.</p>
+
+                    <div class="search-container">
+                        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+                        <input type="text" id="member-search" class="modern-search-input"
+                            placeholder="Cari nama anggota...">
+                    </div>
+
+                    <div class="member-list-container">
+                        <div class="member-pill">1. Putu Wiska Miribstyawan</div>
+                        <div class="member-pill">2. I Komang Gede Suksma Ade Arta</div>
+                        <div class="member-pill">3. I Kadek Gunarta</div>
+                        <div class="member-pill">4. Made Wilman Pranata Rasjmawan</div>
+                        <div class="member-pill">5. Ni Putu Wahyu Widi Asri</div>
+                        <div class="member-pill">6. Made Kurnia Sayoga</div>
+                        <div class="member-pill">7. Putu Sri Vinia Cahyantari</div>
+                        <div class="member-pill">8. I Ketut Risa Dharmawan</div>
+                        <div class="member-pill">9. Ida Ayu Diah Andriani Dwi Saputri</div>
+                        <div class="member-pill">10. Ni Putu Nisa Oktaviani</div>
+                        <div class="member-pill">11. Ni Putu Harista Diandari</div>
+                        <div class="member-pill">12. Pande Putri Wira Ayu Astiti</div>
+                        <div class="member-pill">13. I Made Sulaksana Putra</div>
+                        <div class="member-pill">14. I Md Bagus Lawa Pradnyanthya Wartika</div>
+                        <div class="member-pill">15. Ni Made Mirah Dwi Lestari</div>
+                        <div class="member-pill">16. Putu Elfreda Carissa Aspasia</div>
+                        <div class="member-pill">17. I Nyoman Khrisna Cahya Wiguna</div>
+                        <div class="member-pill">18. I Putu Krisna Dipayana Putra</div>
+                        <div class="member-pill">19. Ni Putu Ananda Puspita Sari</div>
+                        <div class="member-pill">20. Ni Kadek Widya Andriyani</div>
+                        <div class="member-pill">21. I. B. Gd. Ananda Muna</div>
+                        <div class="member-pill">22. I Wayan Yoga Sedana Artha</div>
+                        <div class="member-pill">23. I Made Aditya Dana Pratama</div>
+                        <div class="member-pill">24. I Kadek Yuda Hana Pranata</div>
+                        <div class="member-pill">25. I Nyoman Rian Dananjaya P.</div>
+                        <div class="member-pill">26. I Putu Gede Wahyu Sukma A.</div>
+                        <div class="member-pill">27. Kadek Wira Saputra Dwi A.</div>
+                        <div class="member-pill">28. Ni Kadek Umik Wijayanti</div>
+                        <div class="member-pill">29. I Komang Suta Wijaya</div>
+                        <div class="member-pill">30. I Putu Agus Tangkas Pramana N.</div>
+                        <div class="member-pill">31. I Made Bisma Dharmayuda</div>
+                        <div class="member-pill">32. Putu Tarisya Keswari Putri</div>
+                        <div class="member-pill">33. I Made Satya Pramartha</div>
+                        <div class="member-pill">34. I Nyoman Manik Artha Ardiana</div>
+                        <div class="member-pill">35. Ni Putu Intan Oka Apriliana</div>
+                        <div class="member-pill">36. Pande Wira Artha Dianingsih</div>
+                        <div class="member-pill">37. Ni Nyoman Urmila Sari</div>
+                        <div class="member-pill">38. I Made Fery Sukma Parayascita</div>
+                        <div class="member-pill">39. I Putu Agus Andre Wijaya</div>
+                        <div class="member-pill">40. Pande Andika Mardya</div>
+                        <div class="member-pill">41. I Putu Adi Pratama Putra</div>
+                        <div class="member-pill">42. I Putu Gandhi Saputra</div>
+                        <div class="member-pill">43. I Ketut Aditya</div>
+                        <div class="member-pill">44. Made Jaguandana Dwi Putra</div>
+                        <div class="member-pill">45. I Putu Gede Jody Priandika</div>
+                        <div class="member-pill">46. I Putu Ganendra Ardellian Wijaya</div>
+                        <div class="member-pill">47. I Putu Aldi Permana</div>
+                        <div class="member-pill">48. Ni Putu Ayu Natasya Kumala Dewi</div>
+                        <div class="member-pill">49. Ni Made Regitha Pradnyantari</div>
+                        <div class="member-pill">50. Ni Made Meita Oka Amelia</div>
+                        <div class="member-pill">51. Ida Ayu Linda Maytria Supraptini</div>
+                        <div class="member-pill">52. Ni Made Mayka Angelina Wijaya</div>
+                        <div class="member-pill">53. Made Nova Budi Suputra</div>
+                        <div class="member-pill">54. I Gede Bayu Diatmika</div>
+                        <div class="member-pill">55. I Putu Gede Jennes Wacika Bonanta W.</div>
+                        <div class="member-pill">56. I Putu Agus Yogi Pramudya</div>
+                        <div class="member-pill">57. I Made Yuda Darmawan</div>
+                        <div class="member-pill">58. Putu Esa Raditya</div>
+                        <div class="member-pill">59. I Putu Gede Romy Hartawan</div>
+                        <div class="member-pill">60. Pande Tri Sandi Puspa Wiranadi</div>
+                        <div class="member-pill">61. Ni Kadek Meisya Trisna Dewi</div>
+                        <div class="member-pill">62. Ni Kadek Jesika Putri</div>
+                        <div class="member-pill">63. Ketut Rama Kusuma Wijaya</div>
+                        <div class="member-pill">64. Tude Juliana Putra</div>
+                        <div class="member-pill">65. I Made Agus Putra Artha Wiguna</div>
+                        <div class="member-pill">66. Kadek Adi Pradnyana Putra</div>
+                        <div class="member-pill">67. Ni Made Diah Sanjiwani</div>
+                        <div class="member-pill">68. Ni Komang Revalina Isyana Putri</div>
+                        <div class="member-pill">69. Ni Kadek Ayu Meta Darmayanti</div>
+                        <div class="member-pill">70. Komang Devi Srinadi Praja Sari</div>
+                        <div class="member-pill">71. Ni Made Dinda Maharani</div>
+                        <div class="member-pill">72. Ni Putu Alika Gayatri Diarka</div>
+                        <div class="member-pill">73. I Nyoman Kevin Arya Saputra</div>
+                        <div class="member-pill">74. Putu Nobel Khairniswa Wijaya</div>
+                        <div class="member-pill">75. I Wayan Agus Rhaditya Rastawan</div>
+                        <div class="member-pill">76. Ni Putu Bulan Siti Asih</div>
+                        <div class="member-pill">77. Ni Made Bintang Siti Asih</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: KEBUDAYAAN -->
+        <section id="kebudayaan" class="page-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-heading">Merawat Lingsir, Membakar Semangat</span>
+                    <h2><i class="fa-solid fa-mask text-gold"></i> Bidang Kebudayaan</h2>
+                </div>
+
+                <div class="modern-grid-layout">
+                    <div class="image-text-card">
+                        <div class="img-wrapper" style="position: relative;">
+                            <img id="ogoh-slideshow-img" src="assets/images/O2026.jpeg"
+                                alt="Ogoh-ogoh" style="transition: opacity 0.7s ease;">
+                            <div id="ogoh-slideshow-year" style="position: absolute; bottom: 16px; left: 16px; background: rgba(5,6,10,0.75); color: var(--gold-primary); font-weight: 800; font-size: 14px; padding: 6px 14px; border-radius: var(--radius-pill); backdrop-filter: blur(8px); border: 1px solid rgba(229,181,79,0.3); letter-spacing: 1px;">2026</div>
+                        </div>
+                        <div class="text-content">
+                            <h3><i class="fa-solid fa-fire text-gold"></i> Cipta Karya Ogoh-Ogoh</h3>
+                            <p>Bagi kami, Ogoh-ogoh lebih dari sekadar wahanan seni; ia adalah medium laku spiritual dan
+                                pendewasaan <em>Yowana</em>. Mulai dari proses perumusan konsep,
+                                <strong>ngerakit</strong> rangka, hingga penghalusan detail.
+                            </p>
+                            <p>Malam <em>Pangerupukan</em> menjadi saksi Ogoh-ogoh karya STT Watugunung diarak keliling
+                                desa.</p>
+                            <button class="btn-primary glow-effect"
+                                style="margin-top: 20px; font-size: 14px; padding: 12px 24px;"
+                                onclick="navigateTo('galeri-ogoh')">Lihat Arsip Per Tahun <i
+                                    class="fa-solid fa-arrow-right"></i></button>
+                        </div>
+                    </div>
+
+                    <div class="image-text-card reverse">
+                        <div class="img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1627885068940-0255b5d134b2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                                alt="Gamelan Bali">
+                        </div>
+                        <div class="text-content">
+                            <h3><i class="fa-solid fa-music text-gold"></i> Gema Tabuh Sekaa Gong</h3>
+                            <p>Menguasai gamelan bukan sekadar hobi, melainkan tuntutan <em>swadharma</em>. Dengan penuh
+                                kebanggaan, laras tabuh kami selalu siap ditabuh (<em>ngayah tabuh</em>) setiap kali
+                                Banjar maupun Pura Desa mengadakan <em>piodalan</em>.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: OLAHRAGA -->
+        <section id="olahraga" class="page-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-heading">Kebugaran Jasmani dan Dinamika</span>
+                    <h2><i class="fa-solid fa-volleyball text-gold"></i> Olahraga & Kreativitas</h2>
+                </div>
+
+                <div class="creative-grid">
+                    <div class="creative-card glow-blue">
+                        <div class="blob"></div>
+                        <i class="fa-solid fa-trophy fa-3x card-main-icon"></i>
+                        <h3>Olahraga Antar Pemuda</h3>
+                        <p>Persiapan dan keikutsertaan dalam kompetisi olahraga desa seperti futsal dan voli. Turnamen
+                            bukan cuma ajang kejar piala, tetapi medium mempererat persaudaraan.</p>
+                    </div>
+                    <div class="creative-card glow-purple">
+                        <div class="blob"></div>
+                        <i class="fa-solid fa-camera-retro fa-3x card-main-icon"></i>
+                        <h3>Kreativitas Modern</h3>
+                        <p>Mendorong minat bakat anggota dalam bidang kekinian, seperti fotografi, videografi, dan
+                            pemanfaatan media digital untuk membuktikan STT Watugunung selalu <em>up-to-date</em>.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: MEDIA SOSIAL -->
+        <section id="media-sosial" class="page-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-heading">Ikuti Kegiatan Kami</span>
+                    <h2><i class="fa-solid fa-hashtag text-gold"></i> Media Sosial Yowana</h2>
+                    <p class="intro-text center-text" style="margin-top: 10px;">Pantau terus keseruan, tradisi, dan program kerja terbaru STT Watugunung secara langsung melalui kanal media sosial resmi kami.</p>
+                </div>
+
+                <!-- Tab Switcher -->
+                <div class="social-tab-container" style="display: flex; justify-content: center; gap: 15px; margin-bottom: 40px;">
+                    <button class="social-tab-btn active" data-feed="instagram" style="background: var(--bg-panel); border: 1px solid rgba(255,255,255,0.08); color: var(--text-secondary); padding: 12px 28px; border-radius: var(--radius-pill); font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; backdrop-filter: blur(10px);">
+                        <i class="fa-brands fa-instagram" style="font-size: 18px;"></i> Instagram
+                    </button>
+                    <button class="social-tab-btn" data-feed="tiktok" style="background: var(--bg-panel); border: 1px solid rgba(255,255,255,0.08); color: var(--text-secondary); padding: 12px 28px; border-radius: var(--radius-pill); font-family: inherit; font-size: 15px; font-weight: 700; cursor: pointer; display: inline-flex; align-items: center; gap: 10px; backdrop-filter: blur(10px);">
+                        <i class="fa-brands fa-tiktok" style="font-size: 18px;"></i> TikTok
+                    </button>
+                </div>
+
+                <!-- Feed Content Cards -->
+                <div class="social-feed-content-wrapper" style="position: relative; max-width: 850px; margin: 0 auto;">
+                    <!-- Instagram Card -->
+                    <div id="feed-instagram" class="social-feed-card" style="background: var(--bg-panel); padding: 25px; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(20px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); transition: var(--transition-smooth);">
+                        <div class="feed-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px;">
+                            <span style="font-weight: 700; font-size: 16px; color: var(--text-primary);"><i class="fa-brands fa-instagram text-gold"></i> Galeri Instagram</span>
+                            <a href="https://instagram.com/" target="_blank" class="btn-primary" style="padding: 8px 16px; font-size: 13px; gap: 6px; box-shadow: none;">Kunjungi Profil <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 11px;"></i></a>
+                        </div>
+                        <!-- Elfsight Instagram Feed | Untitled Instagram Feed -->
+                        <script src="https://elfsightcdn.com/platform.js" async></script>
+                        <div class="elfsight-app-7ce2bf4b-52d6-46aa-b404-6fb6dcf65bed" data-elfsight-app-lazy></div>
+                    </div>
+
+                    <!-- TikTok Card -->
+                    <div id="feed-tiktok" class="social-feed-card" style="background: var(--bg-panel); padding: 25px; border-radius: var(--radius-md); border: 1px solid rgba(255,255,255,0.05); backdrop-filter: blur(20px); box-shadow: 0 10px 30px rgba(0,0,0,0.3); display: none; transition: var(--transition-smooth);">
+                        <div class="feed-header" style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; border-bottom: 1px solid rgba(255,255,255,0.05); padding-bottom: 15px;">
+                            <span style="font-weight: 700; font-size: 16px; color: var(--text-primary);"><i class="fa-brands fa-tiktok text-gold"></i> Video TikTok</span>
+                            <a href="https://tiktok.com/" target="_blank" class="btn-primary" style="padding: 8px 16px; font-size: 13px; gap: 6px; box-shadow: none;">Kunjungi Profil <i class="fa-solid fa-arrow-up-right-from-square" style="font-size: 11px;"></i></a>
+                        </div>
+                        <!-- Elfsight TikTok Feed | Untitled TikTok Feed -->
+                        <script src="https://elfsightcdn.com/platform.js" async></script>
+                        <div class="elfsight-app-aed9dbdc-96bd-476d-814b-3beb120b5894" data-elfsight-app-lazy></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION: GALERI OGOH-OGOH -->
+        <section id="galeri-ogoh" class="page-section">
+            <div class="container">
+                <div class="section-header center">
+                    <span class="sub-heading">Arsip Cipta Karya</span>
+                    <h2><i class="fa-solid fa-fire text-gold"></i> Galeri Ogoh-Ogoh</h2>
+                </div>
+
+                <button class="btn-primary glow-effect"
+                    style="margin-bottom: 40px; background: transparent; border: 1px solid var(--gold-primary); color: var(--gold-primary);"
+                    onclick="navigateTo('kebudayaan')"><i class="fa-solid fa-arrow-left"></i> Kembali ke
+                    Kebudayaan</button>
+
+                <div class="archive-grid">
+                    <div class="masonry-item">
+                        <img src="assets/images/O2026.jpeg"
+                            alt="Ogoh-ogoh 2026">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2026</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2025.webp"
+                            alt="Ogoh-ogoh 2025">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2025</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2024.webp"
+                            alt="Ogoh-ogoh 2024">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2024</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2023.webp"
+                            alt="Ogoh-ogoh 2023">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2023</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2020-2022.webp"
+                            alt="Ogoh-ogoh 2020-2022">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2020-2022</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2019.webp"
+                            alt="Ogoh-ogoh 2019">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2019</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2018.webp"
+                            alt="Ogoh-ogoh 2018">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2018</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2017.webp"
+                            alt="Ogoh-ogoh 2017">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2017</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2016.webp"
+                            alt="Ogoh-ogoh 2016">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2016</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2015.webp"
+                            alt="Ogoh-ogoh 2015">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2015</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2013.webp"
+                            alt="Ogoh-ogoh 2013">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2013</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2012.webp"
+                            alt="Ogoh-ogoh 2012">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2012</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2011.webp"
+                            alt="Ogoh-ogoh 2011">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2011</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2010.webp"
+                            alt="Ogoh-ogoh 2010">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2010</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2009.webp"
+                            alt="Ogoh-ogoh 2009">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2009</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2008.webp"
+                            alt="Ogoh-ogoh 2008">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2008</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                    <div class="masonry-item">
+                        <img src="assets/images/O2001.webp"
+                            alt="Ogoh-ogoh 2001">
+                        <div class="masonry-overlay">
+                            <h4>Karya Tahun 2001</h4>
+                            <p>STT Watugunung</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox-modal">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" src="" alt="Full Screen Ogoh-ogoh">
+        <div id="lightbox-caption" class="lightbox-caption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
